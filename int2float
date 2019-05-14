@@ -1,0 +1,14 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Alberto Battistel
+%   14 May 2019
+%   int2float
+%   It takes the vectors formed by CollectData and convert them into 
+%   single float precision.	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% picoscope scales
+ChA = 2;    % V
+ChB = 0.5;  % V
+% picoscope conversion
+convChA = single(-ChA/single(intmax('int16')));
+convChB = single(-ChB/single(intmax('int16')));
